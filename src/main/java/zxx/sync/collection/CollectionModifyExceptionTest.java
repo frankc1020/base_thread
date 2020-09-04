@@ -7,7 +7,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class CollectionModifyExceptionTest {
 	public static void main(String[] args) {
-//		Collection users = new ArrayList();
+//		collection users = new ArrayList();
 		Collection users = new CopyOnWriteArrayList<User>();
 		users.add(new User("张三",28));	
 		users.add(new User("李四",25));			
