@@ -8,6 +8,11 @@ import java.util.concurrent.TimeUnit;
  * @projectName base_thread
  * @description: TODO
  * @date 2021/2/5 12:20
+ *
+ *
+ * 线程死锁：两个线程或多个线程，同时请求其他线程已经申请到资源，形成一个循环，即申请不到其它的资源
+ * 也不释放自己已经申请到的资源，所以形成了线程死锁
+ *
  */
 public class DeadThreadDemo {
 
