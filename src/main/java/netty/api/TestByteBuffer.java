@@ -1,4 +1,4 @@
-package netty.nio;
+package netty.api;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -25,7 +25,7 @@ public class TestByteBuffer {
          *  1. 输入输出流获取
          *  2.RandomAccessFile
          */
-        try(FileChannel channel = new FileInputStream("src/main/java/netty/test/file/data.txt").getChannel()) {
+        try (FileChannel channel = new FileInputStream("src/main/java/netty/test/file/data.txt").getChannel()) {
             //准备缓冲区
             ByteBuffer buffer = ByteBuffer.allocate(10);
 
