@@ -88,7 +88,7 @@ public class ByteBufferUtil {
      * 打印可读取内容
      * @param buffer
      */
-    public static void debugRead(ByteBuffer buffer) {
+    public static void debugRead(ByteBuffer buffer)throws Exception {
         StringBuilder builder = new StringBuilder(256);
         appendPrettyHexDump(builder, buffer, buffer.position(), buffer.limit() - buffer.position());
         System.out.println("+--------+-------------------- read -----------------------+----------------+");
